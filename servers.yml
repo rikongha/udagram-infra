@@ -21,7 +21,7 @@ Parameters:
   BastionHostKeyName:
     Description: Name of an existing KeyPair to enable SSH access to the web servers from bastion host.
     Type: "AWS::EC2::KeyPair::KeyName"
-    Default: bastion-host-key-pair
+    Default: MyUdacityEC2Workspace
 
   MyLocalHostIP:
     Description: The IP of the local host that is used to SSH to bastion host.
@@ -211,18 +211,6 @@ Resources:
         FromPort: 80
         ToPort: 80
         SourceSecurityGroupId: !Ref LBSecGroup
-      - IpProtocol: tcp
-        FromPort: 22
-        ToPort: 22
-        CidrIp: 
-         Fn::ImportValue:
-           !Sub ${EnvironmentName}-BASTION-HOST-1-CIDR
-      - IpProtocol: tcp
-        FromPort: 22
-        ToPort: 22
-        CidrIp: 
-         Fn::ImportValue:
-           !Sub ${EnvironmentName}-BASTION-HOST-2-CIDR
       SecurityGroupEgress:
       - IpProtocol: tcp
         FromPort: 0

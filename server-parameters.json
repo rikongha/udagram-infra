@@ -21,7 +21,7 @@
     },
     {
         "ParameterKey": "BastionHostKeyName",
-		"ParameterValue": "bastion-host-key-pair"
+		"ParameterValue": "MyUdacityEC2Workspace"
     },
     {
         "ParameterKey": "MyLocalHostIP",
