@@ -1,0 +1,30 @@
+[
+	{
+		"ParameterKey": "EnvironmentName",
+		"ParameterValue": "UdagramProject"
+	},
+    {
+        "ParameterKey": "WebServerAMI",
+		"ParameterValue": "ami-0729e439b6769d6ab"
+    },
+    {
+        "ParameterKey": "WebServerInstanceType",
+		"ParameterValue": "t3.medium"
+    },
+    {
+        "ParameterKey": "BastionHostAMI",
+		"ParameterValue": "ami-052efd3df9dad4825"
+    },
+    {
+        "ParameterKey": "BastionHostInstanceType",
+		"ParameterValue": "t2.micro"
+    },
+    {
+        "ParameterKey": "BastionHostKeyName",
+		"ParameterValue": "bastion-host-key-pair"
+    },
+    {
+        "ParameterKey": "MyLocalHostIP",
+		"ParameterValue": "197.255.22.46/32"
+    }
+]
