@@ -26,7 +26,7 @@ Parameters:
   MyLocalHostIP:
     Description: The IP of the local host that is used to SSH to bastion host.
     Type: String
-    Default: 197.255.22.46/32
+    Default: 0.0.0.0/32
 
   WebServerAMI:
     Description: The machine image to be used for web servers.
